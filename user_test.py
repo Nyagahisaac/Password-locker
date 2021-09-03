@@ -18,4 +18,7 @@ class TestUser(unittest.TestCase):
     def test_init_(self):
         '''
         test_init test case to test if the object is initialized properly
+    
         '''
+if __name__ == '__main__':
+    unittest.main()    
