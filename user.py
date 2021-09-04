@@ -30,8 +30,7 @@ class User:
         delete_user method deletes a saved user from the user_list
         '''
         User.user_list.remove(self)
-     
-       
+        
     @classmethod
     def find_by_username(cls,username):
         '''
