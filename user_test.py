@@ -21,7 +21,7 @@ class TestUser(unittest.TestCase):
     
         '''
         self.assertEqual(self.new_user.username,"Izooh The Duke")
-        self.assertEqual(self.new_user.password,"2434tfdg8")
+        self.assertEqual(self.new_user.password,"124vg3 sdx")
     
     def test_save_user(self):
         '''
