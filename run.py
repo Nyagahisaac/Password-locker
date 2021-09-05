@@ -31,3 +31,10 @@ def check_existing_users(username):
     Function that check if user exists with that username and return a Boolean
     '''
     return User.user_exist(username)
+
+def display_users():
+    '''
+    Function that returns all the saved users
+    '''
+    return User.display_users()
+
