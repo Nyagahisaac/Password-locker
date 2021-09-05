@@ -40,9 +40,24 @@ def display_users():
 
 def main():
     print("Hello Welcome to your user list.What is your name?")
-    user_name = input()
+    user_username = input()
         
-    print(f"Hello {user_name}. What would you like to do?")  
+    print(f"Hello {user_username}. What would you like to do?")  
     print('\n')
+    
+    while True:
+        print("use the short codes: cu - create a new user, du - display user, fu - find a user, ex - exit the user list" )
+        
+        short_code = input().lower()
+        
+        if short_code == 'cu':
+            print("New User")
+            print("_"*50)
+            
+            print("username.....")
+            username = input()
+            
+            print("password......")
+            password =  
     
     
