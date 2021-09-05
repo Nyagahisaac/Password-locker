@@ -74,5 +74,49 @@ def main():
             print('\n')
             print(f"New user {f_name}{l_name} created")
             print('\n')
+            
+        elif short_code == 'dc':
+            
+            if display_users():
+            print("Here is a list of all your users")
+            print('\n')
+            
+                for user in display_users():
+                    print(f"{user.first_name} {user.last_name} {user.email}")
+                    
+            
+            else:
+                print('\n')
+                print("You dont seem to hve any account saved yet")
+                print('\n')
+                    
+        elif short_code == 'fc':
+        
+            print("Enter the email you want to serach for")
+            
+            search_email = input()
+            if check_existing_users(search_email):
+                search_email = find_user(search_email)
+                print(f"{search_email.first_name} {search_email.last_name}")
+                print('_'*20)
+                
+                print(f"username .....{search_email.username}")
+                
+                print(f"password......{search_email.password}")
+        
+            else:
+                print("Tht user does not exist")
+            
+        elif short_code == "ex":
+            print("Bye .......")
+            break
+        
+        else:
+            print("I really didn't get that. PLease use the short codes")
+        
     
+        
+    
+    
+            
     
