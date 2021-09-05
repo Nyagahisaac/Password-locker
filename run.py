@@ -50,14 +50,6 @@ def main():
         
         short_code = input().lower()
         
-        
-        
-        
-        
-        
-        
-        
-        
         if short_code == 'cu':
             print("New User")
             print("_"*50)
@@ -77,6 +69,10 @@ def main():
             print("User password......")
             U_password =  input()
             
+            save_user(create_user(f_name,l_name,u_username,e_address,U_password))
             
+            print('\n')
+            print(f"New user {f_name}{l_name} created")
+            print('\n')
     
     
