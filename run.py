@@ -50,6 +50,14 @@ def main():
         
         short_code = input().lower()
         
+        
+        
+        
+        
+        
+        
+        
+        
         if short_code == 'cu':
             print("New User")
             print("_"*50)
