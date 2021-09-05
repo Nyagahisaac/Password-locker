@@ -13,14 +13,17 @@ class TestUser(unittest.TestCase):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_user = User("Izooh The Duke","124vg3 sdx")
+        self.new_user = User("Nyagah","isaac","Izooh The Duke","nyagahisaac21@gmail.com","124vg3 sdx")
         
     def test_init_(self):
         '''
         test_init test case to test if the object is initialized properly
     
         '''
+        self.assertEqual(self.new_user.firstname,"Nyagah")
+        self.assertEqual(self.new_user.lastname,"isaac")
         self.assertEqual(self.new_user.username,"Izooh The Duke")
+        self.assertEqual(self.new_user.email,"nyagahisaac21@gmail.com")
         self.assertEqual(self.new_user.password,"124vg3 sdx")
     
     def test_save_user(self):
@@ -35,7 +38,7 @@ class TestUser(unittest.TestCase):
         test_save_multiple_user to check if we can save multiple user objects to our user_list
         '''
         self.new_user.save_user()
-        test_user = User("james","pass1234") 
+        test_user = User("Nyagah","isaac","james","nyagahisaac21@gmail","pass1234") 
         test_user.save_user()
         self.assertEqual(len(User.user_list),2)
         
@@ -50,7 +53,7 @@ class TestUser(unittest.TestCase):
         test_save_multiple_user to check if we can save multiple user object to our user_list
         '''
         self.new_user.save_user()
-        test_user = User("james","pass1234")
+        test_user = User("Nyagah","isaac","james","nyagahisaac21@gmail.com","pass1234")
         test_user.save_user()
         self.assertEqual(len(User.user_list),2)
     
@@ -59,7 +62,7 @@ class TestUser(unittest.TestCase):
         test_delete_user to test if we can remove a user from our user list
         '''
         self.new_user.save_user()
-        test_user = User("james","pass1234")
+        test_user = User("Nyagah","isaac","james","nyagahisaac@gmail.com","pass1234")
         test_user.save_user()
         
         self.new_user.delete_user()
@@ -67,27 +70,27 @@ class TestUser(unittest.TestCase):
   
   
     
-    def test_find_user_by_username(self):
+    def test_find_user_by_email(self):
         '''
         test to check if we can find a user by username and display information
         '''
         self.new_user.save_user()
-        test_user = User("james","pass1234")
+        test_user = User("Nyagah","isaac","james","nyagahisaac@gmail.com","pass1234")
         test_user.save_user()
         
-        found_user = User.find_by_username("james")
+        found_user = User.find_by_email("nyagahisaac@gmail.com")
         
-        self.assertEqual(found_user.password,test_user.password)
+        self.assertEqual(found_user.email,test_user.email)
       
     def test_user_exists(self):
         '''
         test to check if we can return a Boolean if we cannot find the user.
         '''
         self.new_user.save_user()  
-        test_user = User("james","pass1234")
+        test_user = User("Nyagah","isaac","james","nyagahisaac@gmail.com","pass1234")
         test_user.save_user()
         
-        user_exists = User.user_exist("james")
+        user_exists = User.user_exist("nyagahisaac@gmail.com")
         
         self.assertTrue(user_exists)
             
