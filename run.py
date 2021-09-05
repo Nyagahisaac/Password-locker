@@ -14,3 +14,14 @@ def save_user(user):
     '''
     user.save_user()
     
+def del_user(user):
+    '''
+    Function to delete a user
+    '''
+    user.delete_user()
+    
+def find_user(username):
+    '''
+    Function that finds a user by username and returns the user
+    '''
+    return User.find_by_username(username)
