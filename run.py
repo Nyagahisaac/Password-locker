@@ -247,27 +247,7 @@ def main():
                 break
             else:
                 print("I really didn't get that. Please use the credentials short code")
-                
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
         
         
 if __name__ == '__main__':
