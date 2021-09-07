@@ -30,10 +30,10 @@ Exit application 	Enter: ex 	Exit the current navigation stage
 
 ## Prerequisites
 
-   . python3.6
-   . pip
-   . pyperclip
-    .xclip
+   . python3.8/
+   . pip3/
+   . virtual/
+    .xclip/
 
 # Cloning
 
