@@ -39,7 +39,7 @@ class User:
         User.user_list.remove(self)
         
     @classmethod
-    def find_by_email(cls,email):
+    def find_by_username(cls,username):
         '''
         Method that takes in a username and returns a user that matches that username.
         
@@ -49,11 +49,11 @@ class User:
             User of person that matches the username.
         '''
         for user in cls.user_list:
-            if user.email == email:
+            if user.username == username:
                 return user
             
     @classmethod
-    def user_exist(cls,email):
+    def user_exist(cls,username):
         '''
         Method that checks if a user exists from the user list.
         
@@ -63,7 +63,7 @@ class User:
             Boolean: True or false depending if the user exists
         '''
         for user in cls.user_list:
-            if user.email == email:
+            if user.username == username:
                 return True
             
         return False 
