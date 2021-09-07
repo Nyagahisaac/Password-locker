@@ -1,5 +1,5 @@
 # Password Locker
-Built By Nyagah Isaac
+* Built By Nyagah Isaac
 
 # Description
 
@@ -11,40 +11,39 @@ These are the behaviours/features that the application implements for use by a u
 
 ## As a user I would like:
 
-    To create an account with my credentials - log in and password
-    Store my existing login credentials
-    Generate a password for a new credential/account
-    Delete my credentials incase i wannah make changes.
+   * To create an account with my credentials - log in and password
+   * Store my existing login credentials
+   * Generate a password for a new credential/account
+   * Delete my credentials incase i wannah make changes.
 
 ## Specifications
 
-### Behaviour 	                    Input 	                                                       Output
-Display codes for navigation 	In terminal: $./password_locker.py 	Welcome, choose an option: cu-Create user, dsu-display user,fu-find user, eu-Exit user
-Display prompt for creating an account 	Enter: cu 	Enter your first name, last name ,username, email and password
-Display prompt for user	Enter: dsu 	Enter your  username and email
-Display codes for navigation 	Successful login 	Choose an option: cc - Create Credential, dc - Display Credentials, fc - find Credential, ec - exit
-Display prompt for creating a credential 	Enter: cc 	Enter the site handle, your username and password
-Display a list of credentials 	Enter: dc 	Prints a list of saved credentials
-Exit application 	Enter: ec	Exit the current navigation stage
+### Behaviour |	                    Input |	                                                       Output|
+* Display codes for navigation |	In terminal: $./password_locker.py |	Welcome, choose an option: cu-Create user, dsu-display user,fu-find user, eu-Exit. 
+* Display prompt for creating an account| 	Enter: cu |	Enter your first name, last name ,username, email and password .
+* Display prompt for user| Enter: dsu |	Enter your  username and email.
+* Display codes for navigation |	Successful login |	Choose an option: cc - Create Credential, dc - Display Credentials, fc - find Credential, ec - exit .
+* Display prompt for creating a credential | 	Enter: cc |	Enter the site handle, your username and password .
+* Display a list of credentials |	Enter: dc  |	Prints a list of saved credentials.
+* Exit application  |	Enter: ec	 | Exit the current navigation stage.
 # SetUp / Installation Requirements
 
 ## Prerequisites
 
-   . python3.8
-   . pip3 && pip freeze
-   . virtual
-    .xclip
+  * python3.8
+  * pip3 && pip freeze
+  * virtual
+  * xclip
 
 # Cloning
-
-    In your terminal:
+* In your terminal:
 
       $ git clone https://github.com/Nyagahisaac/Password-locker.git
       $ cd PasswordLocker
 
 # Running the Application
 
-    .To run the application, in your terminal:
+ * To run the application, in your terminal:
 
       $ chmod +x run.py
       or
@@ -52,21 +51,18 @@ Exit application 	Enter: ec	Exit the current navigation stage
 
 # Testing the Application
 
-    .To run the tests for the class file:
-
-      $ python3.8 user_test.py
+  * To run the tests for the class file:
+  * $ python3.8 user_test.py
 
 # Technologies Used
 
-    Python3.8
+   * Python3.8
 
 # License
 
 ## MIT ©2021 Nyagah Isaac
 
 
-2021 GitHub, Inc.
-### Terms Privacy Security Status Docs
+* @2021 GitHub, Inc.
 
-###  Contact GitHub Pricing          API      Training Blog About
 

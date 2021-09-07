@@ -3,12 +3,13 @@ from user import User
 from credentials import Credentials
 
 def function():
-    print("   ____                         __                         __   __   ")
-    print("  |  _ \                       |  |      ____      ____   |  | /  /     ")
-    print("  | |_) )  ____   ___    ___   |  |     /  _  \   /  __|  |  |/  /      ")
-    print("  |  __/  / _  | / __   / __   |  |    |  | |  | |  |     |     /     ")
-    print("  | |    ( (_| | \__ \  \__ \  |  |__  |  |_|  | |  |___  |  |\  \      ")
-    print("  |_|     \____|  ___/   ___/  |_____|  \____ /   \_____| |__| \__\       ")
+    print("   ____                         __                         __   __      ")
+    print("  |  _ \                       |  |      ____      ____   |  | /  /  *   ")
+    print("  | |_) )  ____   ___    ___   |  |     /  _  \   /  __|  |  |/  /       ")
+    print("  |  __/  / _  | / __   / __   |  |    |  | |  | |  |     |     /         ")
+    print("  | |    ( (_| | \__ \  \__ \  |  |__  |  |_|  | |  |___  |  |\  \        ")
+    print("  |_|     \____|  ___/   ___/  |_____|  \____ /   \_____| |__| \__\   *    ")
+    print('\n')
 function()
 
 def create_user(fname,lname,newname,email,newpassword):
