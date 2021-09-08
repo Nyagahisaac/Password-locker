@@ -31,8 +31,7 @@ These are the behaviours/features that the application implements for use by a u
 ## Prerequisites
 
   * python3.8
-  * pip3 && pip freeze
-  * virtual
+  * _pycache_
   * xclip
 
 # Cloning
