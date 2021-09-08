@@ -19,8 +19,7 @@ These are the behaviours/features that the application implements for use by a u
 ## Specifications
 
 |Behaviour 	           |    Input 	                 |       Output          |
-|----------------------------------------------|:-----------------------------------:|-----------------------------:|       
-|                   
+|----------------------------------------------|:-----------------------------------:|-----------------------------:|                         
 |Display codes for navigation   |	In terminal: $./run.py |	Welcome, choose an option: cu-Create user, dsu-display user,fu-find user, eu-Exit.                             |
 |Display prompt for creating an account   | 	Enter: cu |	Enter your first name, last name ,username, email and password .|
 |Display prompt for user| Enter: dsu |	Enter your  username and email.|
