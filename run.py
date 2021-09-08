@@ -231,6 +231,9 @@ def main():
                 print('\n')
                 
             elif  short_code == 'fc':
+                
+                
+                
             
 
                 print("Input the handle name you wannah search for??")
