@@ -87,6 +87,13 @@ def search_credentials():
     '''
     return Credentials.search_credentials()
 
+def generate_Password():
+    '''
+    Function that generates a random password for the user
+    '''
+    save_password = Credentials.generatePassword()
+    return save_password
+
 def main():
     print("Hello Welcome to your user list.What is your name?")
     user_username = input()
@@ -205,9 +212,19 @@ def main():
                 print("Email address .....")
                 e_address = input()
                 
-                print("Password .....")
-                p_word = input()
-                # print(create_credentials(u_handle,u_name,e_address,p_word))
+                while True:
+                    print("tp - Type password \n  gp - Generate password")
+                    password_type =  input().lower().strip()
+                    if password_type == 'tp':
+                        p_word = input("Type your password...")
+                        break
+                    elif password_type == 'gp':
+                        p_word  = generate_Password()
+                        break
+                    else:
+                        
+                        print("Invalid password retry...")
+                        
                 save_credential(create_credentials(u_handle,u_name,e_address,p_word))
                 print('\n')
                 print(f"New credentials {u_handle} {u_name} {e_address} {p_word}created")

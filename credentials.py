@@ -1,3 +1,5 @@
+import random
+import string
 class Credentials:
     '''
     Class that generates new instance credentials
@@ -36,6 +38,20 @@ class Credentials:
         '''
         
         Credentials.credentials_list.remove(self)
+     
+    @classmethod   
+    def find_by_username(cls,username):
+        '''
+        Method that in users user name and return  the credentials
+        
+        Args:
+            username:find credentials by username
+        Returns:
+            Boolean: True or false depending if the user exist with that username
+        '''
+        for credentials in cls.credentials_list:
+            if credentials.username == username:
+                return  credentials
         
     @classmethod
     def credentials_exist(cls,username):
@@ -47,8 +63,8 @@ class Credentials:
         Returns:
             Boolean: True or false depending if the user exists
         '''
-        for user in cls.credentials_list:
-            if user.username == username:
+        for credentials in cls.credentials_list:
+            if credentials.username == username:
                 return True
             
         return False 
@@ -60,3 +76,11 @@ class Credentials:
         '''
         return cls.credentials_list   
     
+    def generatePassword(stringLength=6):
+        '''
+        method that generates password from random strig of letters ,digits and special characters
+        '''
+        password = string.ascii_lowercase + string.ascii_uppercase + string.digits + "#*+^$%&!"
+        return ''.join(random.choice(password) for  i  in range(stringLength))
+            
+        
