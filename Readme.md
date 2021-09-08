@@ -21,13 +21,13 @@ These are the behaviours/features that the application implements for use by a u
 ### Behaviour |	                                     Input |	                                        Output|
 
 |----------------------------------------------|:-----------------------------------:|-----------------------------:|    
-* Display codes for navigation |	                In terminal: $./password_locker.py |	Welcome, choose an option: cu-Create user, dsu-display user,fu-find user, eu-Exit. 
-* Display prompt for creating an account|         	Enter: cu |	                         Enter your first name, last name ,username, email and password .
-* Display prompt for user|                          Enter: dsu |                                                  	Enter your  username and email.
-* Display codes for navigation |	                 Successful login |	                 Choose an option: cc - Create Credential, dc - Display Credentials, fc - find Credential, ec - exit .
-* Display prompt for creating a credential |      	Enter: cc |	                          Enter the site handle, your username and password .
-* Display a list of credentials |                  	Enter: dc  |	                            Prints a list of saved credentials.
-* Exit application  |                              	Enter: ec	 |                              Exit the current navigation stage.
+*| Display codes for navigation |	                |In terminal: $./password_locker.py |	|Welcome, choose an option: cu-Create user, dsu-display user,fu-find user, eu-Exit.| 
+* |Display prompt for creating an account|         |	Enter: cu |	                         |Enter your first name, last name ,username, email and password .|
+*| Display prompt for user|                         | Enter: dsu |                                                  |	Enter your  username and email.|
+*| Display codes for navigation |	                 Successful login |	                 |Choose an option: cc - Create Credential, dc - Display Credentials, fc - find Credential, ec - exit .|
+*| Display prompt for creating a credential |      |	Enter: cc |	                         | Enter the site handle, your username and password .|
+*| Display a list of credentials |                 |	Enter: dc  |	                           | Prints a list of saved credentials.|
+*| Exit application  |                             | 	Enter: ec	 |                             | Exit the current navigation stage.|
 # SetUp / Installation Requirements
 
 ## Prerequisites
